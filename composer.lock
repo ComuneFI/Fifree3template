@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b285040667dfa9ed973bad49e75769d9",
+    "content-hash": "c150dff1ff8fb2e67ad03f577d2f2adb",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1039,16 +1039,16 @@
         },
         {
             "name": "fi/fifreecorebundle",
-            "version": "dev-silex",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ComuneFI/FifreeCoreBundle.git",
-                "reference": "cb78b7ea3d93bfea0a7630921ed430f413848af7"
+                "reference": "75419e53c08d5dc60eb8d0afa03327cbea1e3b99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ComuneFI/FifreeCoreBundle/zipball/cb78b7ea3d93bfea0a7630921ed430f413848af7",
-                "reference": "cb78b7ea3d93bfea0a7630921ed430f413848af7",
+                "url": "https://api.github.com/repos/ComuneFI/FifreeCoreBundle/zipball/75419e53c08d5dc60eb8d0afa03327cbea1e3b99",
+                "reference": "75419e53c08d5dc60eb8d0afa03327cbea1e3b99",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1155,7 @@
             "keywords": [
                 "Core fifree2 bundle"
             ],
-            "time": "2018-03-10T10:44:36+00:00"
+            "time": "2018-03-10T12:29:26+00:00"
         },
         {
             "name": "fi/osbundle",
@@ -5369,9 +5369,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fi/fifreecorebundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
