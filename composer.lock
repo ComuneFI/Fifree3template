@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "287f651f0cac8cf568d2767569a2a56d",
+    "content-hash": "9f216f75feeffb72836925b87f505b11",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1039,7 +1039,7 @@
         },
         {
             "name": "fi/fifreecorebundle",
-            "version": "3.1.x-dev",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ComuneFI/FifreeCoreBundle.git",
@@ -5604,9 +5604,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fi/fifreecorebundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
