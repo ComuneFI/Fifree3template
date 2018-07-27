@@ -6,9 +6,23 @@
             window.location.href = '{{ path('fi_autenticazione_signin', {'ridirezione': app.session.get('_security.main.target_path')}) }}'
         </script>
     {% endif %}
+
     <form action="{{ path("fos_user_security_check") }}" method="post" class="form-signin">
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
         <div class="login-container">
+            <div id="corpologin">
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    {{ 'layout.logged_in_as'|trans({'%username%': (app.user.username is defined)?app.user.username:"Accesso SSO"}, 'FOSUserBundle') }} |
+                    <a href="{{ path('fos_user_security_logout') }}">
+                        {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                    </a>
+                {% else %}
+                    <!--<a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>-->
+                    <a href="{{ path('fi_autenticazione_signin', {'ridirezione': app.session.get('_security.main.target_path')}) }}">
+                        {{ 'Accedi con SSO' }}
+                    </a>
+                {% endif %}
+            </div>
             {% if error %}
                 <div class="loginerror">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
