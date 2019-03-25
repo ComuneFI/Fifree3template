@@ -21,6 +21,10 @@
                     <a href="{{ path('fi_autenticazione_signin', {'ridirezione': app.session.get('_security.main.target_path')}) }}">
                         {{ 'Accedi con SSO' }}
                     </a>
+                    <a href="{{ path('fi_Lineacomuneauth_signin', {'ridirezione': app.session.get('_security.main.target_path')}) }}">
+                        {{ 'Accedi con SPID / Lineacomune' }}
+                    </a>
+
                 {% endif %}
             </div>
             {% if error %}

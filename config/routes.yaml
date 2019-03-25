@@ -2,6 +2,10 @@ autenticazione:
     resource: "@AutenticazioneBundle/Resources/config/routing.yml"
     prefix:   /
 
+fi_Lineacomune:
+    resource: "@LineacomuneauthBundle/Resources/config/routing.yml"
+    prefix:   /
+
 pannello_amministrazione:
     resource: "@PannelloAmministrazioneBundle/Resources/config/routing.yml"
     prefix:   /

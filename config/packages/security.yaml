@@ -14,12 +14,7 @@ security:
             
     firewalls:
         sso_esclusioni:
-            pattern:  ^/(_(profiler|wdt)|css|images|js|accedi)/
-            security: false
-            logout_on_user_change: true
-            
-        sso_login:
-            pattern:  ^/autenticazione/*
+            pattern:  ^/(_(profiler|wdt)|css|images|js|autenticazione|accedi|Lineacomuneauth|oauth2)/
             security: false
             logout_on_user_change: true
             
@@ -33,6 +28,16 @@ security:
           logout:       true
           anonymous:    true
           
+        ssolineacomune:
+            pattern:  ^/Lineacomuneauth/*
+            security: false
+            logout_on_user_change: true
+            
+        sso_login:
+            pattern:  ^/autenticazione/*
+            security: false
+            logout_on_user_change: true
+            
         secured_area:
             #cambiare il pattern per abilitare/disabilitare la sicurezza su tutto il progetto
             pattern:    ^/

@@ -17,4 +17,5 @@ return [
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true, 'test' => true],
     Fi\AutenticazioneBundle\AutenticazioneBundle::class => ['all' => true],
+    Fi\LineacomuneauthBundle\LineacomuneauthBundle::class => ['all' => true],
 ];
